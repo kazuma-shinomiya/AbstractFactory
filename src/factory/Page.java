@@ -8,9 +8,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Page {
-    protected String title;
-    protected String author;
-    protected List<Item> content = new ArrayList<>();
+    private String title;
+    private String author;
+    private List<Item> content = new ArrayList<>();
 
     public Page(String title, String author) {
         this.title = title;
@@ -34,4 +34,16 @@ public abstract class Page {
     }
 
     public abstract String makeHTML();
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public List<Item> getContent() {
+        return content;
+    }
 }

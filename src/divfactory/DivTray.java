@@ -12,10 +12,10 @@ public class DivTray extends Tray {
     public String makeHTML() {
         StringBuilder sb = new StringBuilder();
         sb.append("<p><b>");
-        sb.append(caption);
+        sb.append(getCaption());
         sb.append("</b></p>\n");
         sb.append("<div class=\"TRAY\">");
-        for (Item item: tray) {
+        for (Item item: getTray()) {
             sb.append(item.makeHTML());
         }
         sb.append("</div>\n");

@@ -12,9 +12,9 @@ public class ListTray extends Tray {
     public String makeHTML() {
         StringBuilder sb = new StringBuilder();
         sb.append("<li>\n");
-        sb.append(caption);
+        sb.append(getCaption());
         sb.append("\n<ul>\n");
-        for (Item item: tray) {
+        for (Item item: getTray()) {
             item.makeHTML();
         }
         sb.append("</ul>\n");

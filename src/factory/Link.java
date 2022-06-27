@@ -1,10 +1,14 @@
 package factory;
 
 public abstract class Link extends Item {
-    protected String url;
+    private String url;
 
     public Link(String caption, String url) {
         super(caption);
         this.url = url;
+    }
+
+    public String getUrl() {
+        return url;
     }
 }

@@ -9,6 +9,6 @@ public class DivLink extends Link {
 
     @Override
     public String makeHTML() {
-        return "<div class=\"LINK\"><a href=\"" + url + "\">" + caption + "</a></div>\n";
+        return "<div class=\"LINK\"><a href=\"" + getUrl() + "\">" + getCaption() + "</a></div>\n";
     }
 }
