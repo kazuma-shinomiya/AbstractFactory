@@ -41,6 +41,9 @@ public class Main {
         page.add(blogTray);
         page.add(newsTray);
 
+        Page yahooPage = factory.createYahooPage();
+
         page.output(fileName);
+        yahooPage.output(fileName);
     }
 }

@@ -20,4 +20,5 @@ public class ListFactory extends Factory {
     public Page createPage(String title, String author) {
         return new ListPage(title, author);
     }
+
 }

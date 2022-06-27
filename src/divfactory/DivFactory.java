@@ -20,4 +20,5 @@ public class DivFactory extends Factory {
     public Page createPage(String title, String author) {
         return new DivPage(title, author);
     }
+
 }
